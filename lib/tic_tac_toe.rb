@@ -59,25 +59,7 @@ class TicTacToe
   end 
   
 
-      let(:game) { TicTacToe.new }
-
-      it 'receives user input via the gets method' do
-        allow($stdout).to receive(:puts)
-        expect(game).to receive(:gets).and_return("1")
-
-        game.turn
-      end
-
-      it "calls #input_to_index, #valid_move?, and #current_player" do
-        allow($stdout).to receive(:puts)
-        expect(game).to receive(:gets).and_return("5")
-        expect(game).to receive(:input_to_index).and_return(4)
-        expect(game).to receive(:valid_move?).and_return(true)
-        expect(game).to receive(:current_player).and_return("X")
-
-        game.turn
-      end
-  
+    
  
   
 end 
