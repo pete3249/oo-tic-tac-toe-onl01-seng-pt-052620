@@ -77,9 +77,9 @@ class TicTacToe
   
   def full?
     binding.pry
-    if @board.include?("") == false && won? == false
+    if @board.include?(" ") == false && won? == false
       return true
-    else @board.include?("") == true
+    else @board.include?(" ") == true
       return false
     end 
   end 
