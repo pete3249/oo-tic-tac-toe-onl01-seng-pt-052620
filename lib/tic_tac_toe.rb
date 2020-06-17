@@ -119,5 +119,28 @@ class TicTacToe
     
   end 
 
+it 'congratulates the winner X' do
+        game = TicTacToe.new
+        board = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
+        game.instance_variable_set(:@board, board)
+        allow($stdout).to receive(:puts)
+
+        expect($stdout).to receive(:puts).with("Congratulations X!")
+
+        game.play
+      end
+
+      it 'congratulates the winner O' do
+        game = TicTacToe.new
+        board = ["X", "X", " ", "X", " ", " ", "O", "O", "O"]
+        game.instance_variable_set(:@board, board)
+
+        allow($stdout).to receive(:puts)
+
+        expect($stdout).to receive(:puts).with("Congratulations O!")
+
+        game.play
+      end
+
    
 end 
