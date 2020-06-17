@@ -114,7 +114,7 @@ class TicTacToe
     if over? == true
       
     else 
-      
+    turn
     end 
   end 
   
