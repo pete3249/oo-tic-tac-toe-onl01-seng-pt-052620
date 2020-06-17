@@ -58,6 +58,7 @@ class TicTacToe
     index = input_to_index(user_input)
     checking_validity = valid_move?(index)
     current_player
+    @board
   end 
   
 end 
