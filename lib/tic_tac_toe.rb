@@ -64,5 +64,10 @@ class TicTacToe
         turn
       end 
   end 
+  
+  def won?
+    if @board 
+    
+  end 
 
 end 
