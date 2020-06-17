@@ -71,5 +71,23 @@ class TicTacToe
    WIN_COMBINATIONS = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,2]]
     
   end 
+  
+   describe "#won?" do
+      it 'returns false for a draw' do
+        game = TicTacToe.new
+        board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+        game.instance_variable_set(:@board, board)
+
+        expect(game.won?).to be_falsey
+      end
+
+      it 'returns the winning combo for a win' do
+        game = TicTacToe.new
+        board = ["X", "O", "X", "O", "X", "O", "O", "X", "X"]
+        game.instance_variable_set(:@board, board)
+
+        expect(game.won?).to contain_exactly(0,4,8)
+      end
+    end
 
 end 
