@@ -75,14 +75,6 @@ class TicTacToe
     end
   end 
   
-  def full?
-    if @board.include?("") == false
-      return true
-    else 
-      return false
-    end 
-  end 
-  
   def draw?
     if won? == false && @board.include?("") == false
       return true
