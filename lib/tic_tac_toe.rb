@@ -61,7 +61,6 @@ class TicTacToe
         move(index, letter)
         display_board
       else 
-        gets.chomp
         turn
       end 
   end 
