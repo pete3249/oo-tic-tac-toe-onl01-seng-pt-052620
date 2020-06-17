@@ -100,6 +100,10 @@ class TicTacToe
   
   def winner
     if array = won? 
+      @board[array[0]]
+      
+      
+      
     binding.pry
     else
       returns nil
