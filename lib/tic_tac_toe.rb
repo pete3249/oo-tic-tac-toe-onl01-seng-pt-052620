@@ -55,7 +55,12 @@ class TicTacToe
   
   def turn
     user_input = gets.chomp
+    binding.pry
     index = input_to_index(user_input)
+      if valid_move?(index) == true
+        
+    
+    
     checking_validity = valid_move?(index)
     current_player
     @board
