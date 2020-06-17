@@ -76,16 +76,31 @@ class TicTacToe
   end 
   
   def full?
-    if @board.include?("") == false
+    binding.pry
+    if @board.include?("") == false && won? == false
       return true
     else
       return false
     end 
   end 
   
-  
-  
-  
+     describe '#full?' do
+      it 'returns true for a draw' do
+        game = TicTacToe.new
+        board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+        game.instance_variable_set(:@board, board)
+
+        expect(game.full?).to be_truthy
+      end
+
+      it 'returns false for an in-progress game' do
+        game = TicTacToe.new
+        board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
+        game.instance_variable_set(:@board, board)
+
+        expect(game.full?).to be_falsey
+      end
+    end
   
   
   
