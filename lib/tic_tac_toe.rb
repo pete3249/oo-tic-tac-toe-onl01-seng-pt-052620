@@ -116,7 +116,7 @@ class TicTacToe
     
     if won?
       binding.pry
-      puts "Congratulations "
+      puts "Congratulations" + winner
     end 
     
   end 
