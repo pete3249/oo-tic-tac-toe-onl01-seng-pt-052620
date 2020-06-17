@@ -100,12 +100,12 @@ class TicTacToe
   
   def winner
     array = won?
-    if @board[array[0]] == "X"
+    if array == false
+      return nil 
+    elsif @board[array[0]] == "X"
       "X"
-    elsif @board[array[0]] == "O"
+    else @board[array[0]] == "O"
       "O"
-    else 
-      return nil
     end 
   end 
   
