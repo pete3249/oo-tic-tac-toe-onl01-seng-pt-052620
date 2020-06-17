@@ -66,11 +66,9 @@ class TicTacToe
   end 
   
   def won?
+    @board.detect{| |         }
     
     
-    
-    binding.pry
-    @board.each do 
     
     #returns false if no winning WIN_COMBINATIONS
     
