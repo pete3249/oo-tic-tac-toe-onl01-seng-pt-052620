@@ -99,7 +99,7 @@ class TicTacToe
   end 
   
   def winner
-    if won? 
+    array = won? 
       binding.pry
     else
       returns nil
