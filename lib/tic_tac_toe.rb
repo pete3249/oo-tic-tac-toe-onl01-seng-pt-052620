@@ -58,12 +58,9 @@ class TicTacToe
     binding.pry
     index = input_to_index(user_input)
       if valid_move?(index) == true
-        
+      end 
     
-    
-    checking_validity = valid_move?(index)
-    current_player
-    @board
+ 
   end 
   
 end 
