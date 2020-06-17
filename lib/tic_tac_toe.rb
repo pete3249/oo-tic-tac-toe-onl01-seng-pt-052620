@@ -71,9 +71,9 @@ class TicTacToe
       if @board[winning_combos[0]] == @board[winning_combos[1]] && 
         @board[winning_combos[1]] == @board[winning_combos[2]] &&
         position_taken?(winning_combos[0])
-        return winning_combos
-      else 
-        return false 
+        #return winning_combos
+      #else 
+       # return false 
       end
     end
   end 
