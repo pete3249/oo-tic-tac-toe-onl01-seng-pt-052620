@@ -113,23 +113,11 @@ class TicTacToe
     turn
     if over? == true
       
-    else
+    else 
       
     end 
   end 
   
-  
-  describe './lib/tic_tac_toe.rb' do
-  describe TicTacToe do
-    describe '#play' do
-      it 'asks for players input on a turn of the game' do
-        game = TicTacToe.new
-        allow($stdout).to receive(:puts)
-        allow(game).to receive(:over?).and_return(false, true)
 
-        expect(game).to receive(:gets).at_least(:once).and_return("1")
-
-        game.play
-      end
    
 end 
