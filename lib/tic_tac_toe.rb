@@ -74,6 +74,9 @@ class TicTacToe
   end 
     
     @board.collect do |entry|
+      if entry = "X"
+        
+      elsif entry = "O"
       
     #returns false if no winning WIN_COMBINATIONS
     
