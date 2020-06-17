@@ -73,7 +73,8 @@ class TicTacToe
       
   end 
     
-    
+    @board.collect do |entry|
+      
     #returns false if no winning WIN_COMBINATIONS
     
     #returns winning combination for a win
