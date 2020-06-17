@@ -76,38 +76,14 @@ class TicTacToe
   end 
   
   def draw?
-    
-    
-    
-    @board.include?("") == false
+    if won? == false && @board.include?("") == false
       return true
-  end 
-
-  describe '#draw?' do
-      it 'returns true for a draw' do
-        game = TicTacToe.new
-        board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
-        game.instance_variable_set(:@board, board)
-
-        expect(game.draw?).to be_truthy
-      end
-
-      it 'returns false for a won game' do
-        game = TicTacToe.new
-        board = ["X", "O", "X", "O", "X", "X", "O", "O", "X"]
-        game.instance_variable_set(:@board, board)
-
-        expect(game.draw?).to be_falsey
-      end
-
-      it 'returns false for an in-progress game' do
-        game = TicTacToe.new
-        board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
-        game.instance_variable_set(:@board, board)
-
-        expect(game.draw?).to be_falsey
-      end
+    elsif won? != false
+      return false
+    else 
+      return false
     end
+  end 
 
    
 end 
