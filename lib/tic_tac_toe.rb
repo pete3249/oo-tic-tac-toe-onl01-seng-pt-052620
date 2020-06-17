@@ -79,7 +79,8 @@ class TicTacToe
     if @board.include?("") == false
       return true
     else 
-      false 
+      false
+    end 
   end 
   
   def draw?
