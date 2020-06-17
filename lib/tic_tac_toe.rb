@@ -78,6 +78,8 @@ class TicTacToe
         
       elsif entry = "O"
       
+      else 
+      
     #returns false if no winning WIN_COMBINATIONS
     
     #returns winning combination for a win
