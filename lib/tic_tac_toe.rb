@@ -73,6 +73,8 @@ class TicTacToe
       
   end 
     
+    
+    
     @board.collect do |entry|
       if entry = "X"
         
