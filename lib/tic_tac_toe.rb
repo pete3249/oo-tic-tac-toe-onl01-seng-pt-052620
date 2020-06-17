@@ -79,7 +79,7 @@ class TicTacToe
     if @board.include?("") == false
       return true
     else 
-      false
+      return false
     end 
   end 
   
