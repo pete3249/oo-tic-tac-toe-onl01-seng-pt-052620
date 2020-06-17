@@ -77,7 +77,7 @@ class TicTacToe
   end 
   
   def full?
-    if @board.include?(" ") == false && won? == false
+    if @board.include?(" ") == false && !won? == false
       return true
     else
       return false
@@ -96,6 +96,10 @@ class TicTacToe
     if won? || full?
       true
     end 
+  end 
+  
+  def winner
+    
   end 
   
   
