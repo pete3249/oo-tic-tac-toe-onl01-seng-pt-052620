@@ -76,8 +76,11 @@ class TicTacToe
   end 
   
   def draw?
-    binding.pry
-    @board.include?("")
+    
+    
+    
+    @board.include?("") == false
+      return true
   end 
 
   
