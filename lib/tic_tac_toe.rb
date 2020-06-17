@@ -84,7 +84,7 @@ class TicTacToe
   end 
 
   def draw?
-    if won? == false && @board.include?("") == false
+    if won? == false && @board.include?(" ") == false
       return true
     elsif won? != false
       return false
