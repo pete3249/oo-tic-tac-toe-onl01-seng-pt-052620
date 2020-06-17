@@ -67,6 +67,7 @@ class TicTacToe
   
   def won?
     WIN_COMBINATIONS.each do |winning_combos|
+      if winning_combos 
       binding.pry
     end 
       
