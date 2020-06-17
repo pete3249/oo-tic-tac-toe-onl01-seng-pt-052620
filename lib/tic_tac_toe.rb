@@ -70,24 +70,12 @@ class TicTacToe
       if @board[winning_combos[0]] == @board[winning_combos[1]] && @board[winning_combos[1]] == @board[winning_combos[2]]
         winning_combos
       else 
-        
+        false 
       end
     end
-      
   end 
+
     
     
-    
-    @board.collect do |entry|
-      if entry = "X"
-        
-      elsif entry = "O"
-      
-      else 
-      
-    #returns false if no winning WIN_COMBINATIONS
-    
-    #returns winning combination for a win
-  
    
 end 
