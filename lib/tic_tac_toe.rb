@@ -62,7 +62,6 @@ class TicTacToe
         display_board
       else 
         return "invalid"
-        gets.chomp
         turn
       end 
   end 
