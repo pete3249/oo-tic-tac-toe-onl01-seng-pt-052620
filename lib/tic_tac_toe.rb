@@ -108,5 +108,9 @@ class TicTacToe
       "O"
     end 
   end 
+  
+  def play
+    turn
+  end 
    
 end 
