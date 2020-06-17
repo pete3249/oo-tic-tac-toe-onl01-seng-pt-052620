@@ -101,9 +101,6 @@ class TicTacToe
   def winner
     if won? 
       binding.pry
-      
-    elsif
-      
     else
       returns nil
     end 
