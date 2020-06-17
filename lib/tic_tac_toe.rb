@@ -105,7 +105,7 @@ class TicTacToe
     elsif @board[array[0]] == "O"
       "O"
     else 
-      nil
+      return nil
     end 
   end 
   
