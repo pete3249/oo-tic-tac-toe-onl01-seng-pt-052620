@@ -79,23 +79,11 @@ class TicTacToe
     binding.pry
     if @board.include?(" ") == false && won? == false
       return true
-    else @board.include?(" ") == true
+    else
       return false
     end 
   end 
-  
-  
-      it 'returns false for an in-progress game' do
-        game = TicTacToe.new
-        board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
-        game.instance_variable_set(:@board, board)
 
-        expect(game.full?).to be_falsey
-      end
-    end
-  
-  
-  
   def draw?
     if won? == false && @board.include?("") == false
       return true
