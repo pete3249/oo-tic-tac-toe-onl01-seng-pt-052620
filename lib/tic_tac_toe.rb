@@ -60,24 +60,9 @@ class TicTacToe
         @board[index] == current_player
         display_board
       else 
-        user_input = gets.chomp
+        return "invalid"
+        turn
       end 
   end 
 
-
-        board = game.instance_variable_get(:@board)
-        expect(board).to eq(["X", " ", " ", " ", " ", " ", " ", " ", " "])
-      end
-
-      it 'asks for input again after a failed validation' do
-        game = TicTacToe.new
-        allow($stdout).to receive(:puts)
-
-        expect(game).to receive(:gets).and_return("invalid")
-        expect(game).to receive(:gets).and_return("1")
-
-        game.turn
-      end
-    end
-  
 end 
