@@ -110,7 +110,7 @@ class TicTacToe
   end 
   
   def play
-    until draw?
+    until over?
       turn
     end
     
