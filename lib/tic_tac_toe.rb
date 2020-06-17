@@ -106,10 +106,6 @@ class TicTacToe
       "O"
     else 
       nil
-      
-    binding.pry
-    else
-      returns nil
     end 
   end 
   
