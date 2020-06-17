@@ -74,6 +74,13 @@ class TicTacToe
       end
     end
   end 
+  
+  def draw?
+    
+    
+    
+    if @board 
+  end 
 
   
    
