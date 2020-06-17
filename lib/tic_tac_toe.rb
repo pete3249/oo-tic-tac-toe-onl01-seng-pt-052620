@@ -99,7 +99,7 @@ class TicTacToe
   end 
   
   def winner
-    array = won? 
+    if array = won? 
     binding.pry
     else
       returns nil
@@ -110,25 +110,7 @@ class TicTacToe
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-    def winner
-    index = []
-    index = won?
-    if index == false
-      nil
-    elsif @board[index[0]] == "X"
-      "X"
-    else @board[index[0]] == "O"
-      "O"
-    end
-  end
+
   
 
    
