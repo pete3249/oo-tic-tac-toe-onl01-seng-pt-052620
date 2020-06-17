@@ -99,13 +99,16 @@ class TicTacToe
   end 
   
   def winner
-    if 
+    if won? 
+      binding.pry
+      
+    elsif
+      
+    else
+      returns nil
+    end 
   end 
   
-  
-  
-  
-  
-  
+
    
 end 
